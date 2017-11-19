@@ -11726,9 +11726,7 @@ body {
 div#notebook {
   overflow: visible;
   border-top: none;
-}
-
-@media print {
+}@media print {
   div.cell {
     display: block;
     page-break-inside: avoid;
@@ -11749,7 +11747,7 @@ div#notebook {
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
     <!-- MathJax configuration -->
     <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
@@ -11773,8 +11771,7 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11790,8 +11787,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11802,7 +11798,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Load pickled data</span>
@@ -11831,8 +11827,7 @@ div#notebook {
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11849,8 +11844,7 @@ div#notebook {
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11860,7 +11854,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Replace each question mark with the appropriate value. </span>
@@ -11882,7 +11876,7 @@ div#notebook {
 <span class="n">n_test</span> <span class="o">=</span> <span class="n">y_test</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># TODO: What&#39;s the shape of an traffic sign image?</span>
-<span class="n">image_shape</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">image_shape</span> <span class="o">=</span> <span class="n">X_train</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
 
 <span class="c1"># TODO: How many unique classes/labels there are in the dataset.</span>
 <span class="n">n_classes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">concatenate</span><span class="p">((</span><span class="n">y_train</span><span class="p">,</span><span class="n">y_test</span><span class="p">,</span><span class="n">y_valid</span><span class="p">)))</span><span class="o">.</span><span class="n">size</span>
@@ -11903,13 +11897,15 @@ div#notebook {
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of training examples = 34799
 Number of validation examples = 4410
 Number of testing examples = 12630
-Image data shape = (32, 32)
+Image data shape = (32, 32, 3)
 Number of classes = 43
 </pre>
 </div>
@@ -11919,8 +11915,7 @@ Number of classes = 43
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -11928,8 +11923,7 @@ Number of classes = 43
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -12003,7 +11997,9 @@ Number of classes = 43
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 0 : &#34;Speed limit (20km/h)&#34;
@@ -12013,7 +12009,9 @@ Number of classes = 43
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -12641,7 +12639,9 @@ xhhjjDHGGGPMBcAvgYwxxhhjjDHGGGMuAP8PIGyOKYtLguUAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 1 : &#34;Speed limit (30km/h)&#34;
@@ -12651,7 +12651,9 @@ xhhjjDHGGGPMBcAvgYwxxhhjjDHGGGMuAP8PIGyOKYtLguUAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13248,7 +13250,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 2 : &#34;Speed limit (50km/h)&#34;
@@ -13258,7 +13262,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -13876,7 +13882,9 @@ xhizBvghkDHGGGOMMcYYY8wa8L8BiCCWUw7ZQSsAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 3 : &#34;Speed limit (60km/h)&#34;
@@ -13886,7 +13894,9 @@ xhizBvghkDHGGGOMMcYYY8wa8L8BiCCWUw7ZQSsAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14389,7 +14399,9 @@ AAAAMAH/AuTxUmAi1CVUAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 4 : &#34;Speed limit (70km/h)&#34;
@@ -14399,7 +14411,9 @@ AAAAMAH/AuTxUmAi1CVUAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -14945,7 +14959,9 @@ CAAAAAAAAACgA/AQCAAAAAAAAACgA/wXUHk5Or/09j8AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 5 : &#34;Speed limit (80km/h)&#34;
@@ -14955,7 +14971,9 @@ CAAAAAAAAACgA/AQCAAAAAAAAACgA/wXUHk5Or/09j8AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -15509,7 +15527,9 @@ hBBCCCGEEEJsAX8Hy0aW5KGi8a8AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 6 : &#34;End of speed limit (80km/h)&#34;
@@ -15519,7 +15539,9 @@ hBBCCCGEEEJsAX8Hy0aW5KGi8a8AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -16016,7 +16038,9 @@ AAAADfwCXLQULelNLuAAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 7 : &#34;Speed limit (100km/h)&#34;
@@ -16026,7 +16050,9 @@ AAAADfwCXLQULelNLuAAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -16555,7 +16581,9 @@ IiIiIiIiMgJcBBIRERERERERGQEuAomIiIiIiIiIjAAXgURERERERERERoCLQCIiIiIiIiIiI+Df
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 8 : &#34;Speed limit (120km/h)&#34;
@@ -16565,7 +16593,9 @@ IiIiIiIiMgJcBBIRERERERERGQEuAomIiIiIiIiIjAAXgURERERERERERoCLQCIiIiIiIiIiI+Df
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -17053,7 +17083,9 @@ IAg3AP9fO3YgAAAAACDI33qQCyMJBAAAADAggQAAAAAGJBAAAADAgAQCAAAAGJBAAAAAAAMBgnVy
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 9 : &#34;No passing&#34;
@@ -17063,7 +17095,9 @@ IAg3AP9fO3YgAAAAACDI33qQCyMJBAAAADAggQAAAAAGJBAAAADAgAQCAAAAGJBAAAAAAAMBgnVy
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -17663,7 +17697,9 @@ jFkD/i8RNEWoXZPqrQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 10 : &#34;No passing for vehicles over 3.5 metric tons&#34;
@@ -17673,7 +17709,9 @@ jFkD/i8RNEWoXZPqrQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -18201,7 +18239,9 @@ CSQiIiIiIiIiMgN8CSQiIiIiIiIiMgN8CSQiIiIiIiIiMgP+C3UyLgV4zycVAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 11 : &#34;Right-of-way at the next intersection&#34;
@@ -18211,7 +18251,9 @@ CSQiIiIiIiIiMgN8CSQiIiIiIiIiMgN8CSQiIiIiIiIiMgP+C3UyLgV4zycVAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -18798,7 +18840,9 @@ R+M2hgAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 12 : &#34;Priority road&#34;
@@ -18808,7 +18852,9 @@ R+M2hgAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -19443,7 +19489,9 @@ Y4wxxhhjjDHGbAH+Lw8FIJUzLGx5AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 13 : &#34;Yield&#34;
@@ -19453,7 +19501,9 @@ Y4wxxhhjjDHGbAH+Lw8FIJUzLGx5AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -20005,7 +20055,9 @@ IiIiInIE+BJIREREREREROQI8CWQiIiIiIiIiMgR4EsgEREREREREZEjwJdAIiIiIiIiIiJHwP8C
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 14 : &#34;Stop&#34;
@@ -20015,7 +20067,9 @@ IiIiInIE+BJIREREREREROQI8CWQiIiIiIiIiMgR4EsgEREREREREZEjwJdAIiIiIiIiIiJHwP8C
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -20643,7 +20697,9 @@ EGIH8P8A2hNYUFhINR0AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 15 : &#34;No vehicles&#34;
@@ -20653,7 +20709,9 @@ EGIH8P8A2hNYUFhINR0AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -21255,7 +21313,9 @@ jDHGGHMC8EMgY4wxxhhjjDHGmBPA/wahryBLcWFIegAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 16 : &#34;Vehicles over 3.5 metric tons prohibited&#34;
@@ -21265,7 +21325,9 @@ jDHGGHMC8EMgY4wxxhhjjDHGmBPA/wahryBLcWFIegAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -21827,7 +21889,9 @@ swT4JZAxxhhjjDHGGGPMEuCXQMYYY4wxxhhjjDFLwP8Cr+rqwT/3r3AAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 17 : &#34;No entry&#34;
@@ -21837,7 +21901,9 @@ swT4JZAxxhhjjDHGGGPMEuCXQMYYY4wxxhhjjDFLwP8Cr+rqwT/3r3AAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -22339,7 +22405,9 @@ AAAMwCQQAAAAwAD+BHb6/arVmdk3AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 18 : &#34;General caution&#34;
@@ -22349,7 +22417,9 @@ AAAMwCQQAAAAwAD+BHb6/arVmdk3AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -22958,7 +23028,9 @@ Y8wK4B+BjDHGGGOMMcYYY1aA/wOqjuGA4XijNQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 19 : &#34;Dangerous curve to the left&#34;
@@ -22968,7 +23040,9 @@ Y8wK4B+BjDHGGGOMMcYYY1aA/wOqjuGA4XijNQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -23528,7 +23602,9 @@ O4BfAhljjDHGGGOMMcbsAH4JZIwxxhhjjDHGGLMD/C+D7wxTjeZfowAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 20 : &#34;Dangerous curve to the right&#34;
@@ -23538,7 +23614,9 @@ O4BfAhljjDHGGGOMMcbsAH4JZIwxxhhjjDHGGLMD/C+D7wxTjeZfowAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -24007,7 +24085,9 @@ UsoAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 21 : &#34;Double curve&#34;
@@ -24017,7 +24097,9 @@ UsoAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -24600,7 +24682,9 @@ vwQyxhhjjDHGGGOMWQD+G0VMjcr1tHvSAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 22 : &#34;Bumpy road&#34;
@@ -24610,7 +24694,9 @@ vwQyxhhjjDHGGGOMWQD+G0VMjcr1tHvSAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -25179,7 +25265,9 @@ McYYMwf4IZAxxhhjjDHGGGPMHPB/mZTOenoGyPoAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 23 : &#34;Slippery road&#34;
@@ -25189,7 +25277,9 @@ McYYMwf4IZAxxhhjjDHGGGPMHPB/mZTOenoGyPoAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -25790,7 +25880,9 @@ McYsAP4RyBhjjDHGGGOMMWYB8I9AxhhjjDHGGGOMMQvA/wcMiS22wUggewAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 24 : &#34;Road narrows on the right&#34;
@@ -25800,7 +25892,9 @@ McYsAP4RyBhjjDHGGGOMMWYB8I9AxhhjjDHGGGOMMQvA/wcMiS22wUggewAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -26420,7 +26514,9 @@ oDgAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 25 : &#34;Road work&#34;
@@ -26430,7 +26526,9 @@ oDgAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -27025,7 +27123,9 @@ jDHGbAH+CGSMMcYYY4wxxhizBfgjkDHGGGOMMcYYY8wW8P8AHLjsT+c0vpcAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 26 : &#34;Traffic signals&#34;
@@ -27035,7 +27135,9 @@ jDHGbAH+CGSMMcYYY4wxxhizBfgjkDHGGGOMMcYYY8wW8P8AHLjsT+c0vpcAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -27581,7 +27683,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 27 : &#34;Pedestrians&#34;
@@ -27591,7 +27695,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -28188,7 +28294,9 @@ l5gDAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 28 : &#34;Children crossing&#34;
@@ -28198,7 +28306,9 @@ l5gDAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -28758,7 +28868,9 @@ GGPMEPC/5/Ur+cPfwisAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 29 : &#34;Bicycles crossing&#34;
@@ -28768,7 +28880,9 @@ GGPMEPC/5/Ur+cPfwisAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -29344,7 +29458,9 @@ AElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 30 : &#34;Beware of ice/snow&#34;
@@ -29354,7 +29470,9 @@ AElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -29921,7 +30039,9 @@ AAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 31 : &#34;Wild animals crossing&#34;
@@ -29931,7 +30051,9 @@ AAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -30420,7 +30542,9 @@ QghxBdCPQEIIIYQQQgghhPj/NwpGAAAA/9aDJyPWoQ0AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 32 : &#34;End of all speed and passing limits&#34;
@@ -30430,7 +30554,9 @@ QghxBdCPQEIIIYQQQgghhPj/NwpGAAAA/9aDJyPWoQ0AAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -30968,7 +31094,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 33 : &#34;Turn right ahead&#34;
@@ -30978,7 +31106,9 @@ SUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -31569,7 +31699,9 @@ xhizBPglkDHGGGOMMcYYY8wS4JdAxhhjjDHGGGOMMUvA/wHH/3fIfpZ8jAAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 34 : &#34;Turn left ahead&#34;
@@ -31579,7 +31711,9 @@ xhizBPglkDHGGGOMMcYYY8wS4JdAxhhjjDHGGGOMMUvA/wHH/3fIfpZ8jAAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -32134,7 +32268,9 @@ SAghhBBCCCGEEGIOCN0yZiGEEEIIIYQQQgjx/xFVAgkhhBBCCCGEEELMAXoJJIQQQgghhBBCCDEH
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 35 : &#34;Ahead only&#34;
@@ -32144,7 +32280,9 @@ SAghhBBCCCGEEGIOCN0yZiGEEEIIIYQQQgjx/xFVAgkhhBBCCCGEEELMAXoJJIQQQgghhBBCCDEH
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -32748,7 +32886,9 @@ QmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 36 : &#34;Go straight or right&#34;
@@ -32758,7 +32898,9 @@ QmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -33361,7 +33503,9 @@ Y4wxxiwAfglkjDHGGGOMMcYYswD8C+/IzgQutyPSAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 37 : &#34;Go straight or left&#34;
@@ -33371,7 +33515,9 @@ Y4wxxiwAfglkjDHGGGOMMcYYswD8C+/IzgQutyPSAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -33968,7 +34114,9 @@ McYYY4wxxhhjFgC/BDLGGGOMMcYYY4xZAP4Ht60qVxb+A6MAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 38 : &#34;Keep right&#34;
@@ -33978,7 +34126,9 @@ McYYY4wxxhhjFgC/BDLGGGOMMcYYY4xZAP4Ht60qVxb+A6MAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -34531,7 +34681,9 @@ AAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 39 : &#34;Keep left&#34;
@@ -34541,7 +34693,9 @@ AAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -35131,7 +35285,9 @@ GklEQVSMMcYYMwb4I5AxxhhjjDHGGGPMGPC/Ozl2Pqe5rqUAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 40 : &#34;Roundabout mandatory&#34;
@@ -35141,7 +35297,9 @@ GklEQVSMMcYYMwb4I5AxxhhjjDHGGGPMGPC/Ozl2Pqe5rqUAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -35753,7 +35911,9 @@ GGOMMcYYY4wxZgrwQyBjjDHGGGOMMcaYKaD0WCkbxhhjjDHGGGOMMeb/a6wEMsYYY4wxxhhjjJkC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 41 : &#34;End of no passing&#34;
@@ -35763,7 +35923,9 @@ GGOMMcYYY4wxZgrwQyBjjDHGGGOMMcaYKaD0WCkbxhhjjDHGGGOMMeb/a6wEMsYYY4wxxhhjjJkC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -36336,7 +36498,9 @@ QmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Class # 42 : &#34;End of no passing by vehicles over 3.5 metric tons&#34;
@@ -36346,7 +36510,9 @@ QmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -36853,8 +37019,7 @@ DfH1TE2cj7MCAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36874,8 +37039,7 @@ DfH1TE2cj7MCAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36883,8 +37047,7 @@ DfH1TE2cj7MCAAAAAElFTkSuQmCC
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -36957,7 +37120,9 @@ DfH1TE2cj7MCAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37100,7 +37265,9 @@ RK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -37222,8 +37389,7 @@ QmSKxC9Epkj8QmSKxC9Epkj8QmTK/wFo33eCGkXPJAAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37575,8 +37741,7 @@ QmSKxC9Epkj8QmSKxC9Epkj8QmTK/wFo33eCGkXPJAAAAABJRU5ErkJggg==
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37584,8 +37749,7 @@ QmSKxC9Epkj8QmSKxC9Epkj8QmTK/wFo33eCGkXPJAAAAABJRU5ErkJggg==
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37693,7 +37857,9 @@ sets imply underfitting. A high accuracy on the training set but low accuracy on
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training...
@@ -37768,7 +37934,9 @@ Model saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Test Accuracy = 0.939
@@ -37780,8 +37948,7 @@ Model saved
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37792,8 +37959,7 @@ Model saved
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -37854,7 +38020,9 @@ Model saved
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38392,8 +38560,7 @@ CCGEEEIIITqjgwQhhBBCCCGEEEJ0RgcJQgghhBBCCCGE6Mx/A07QtT4e19OcAAAAAElFTkSuQmCC
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -38463,7 +38630,9 @@ CCGEEEIIITqjgwQhhBBCCCGEEEJ0RgcJQgghhBBCCCGE6Mx/A07QtT4e19OcAAAAAElFTkSuQmCC
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38573,7 +38742,9 @@ T0geucATkkcu8ITkkQv+H14nLuXy41u5AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38664,7 +38835,9 @@ cEVysuCK5GTBFcnJgiuSkwVXJCcLrkhOFv4H0bh035MRxPoAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 17, No entry
@@ -38676,7 +38849,9 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38787,7 +38962,9 @@ wBOSRyrwhOSRCjwheaQCT0geqcATkkcq+H9YlunVI/Y1eQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38874,7 +39051,9 @@ TkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 38, Keep right
@@ -38886,7 +39065,9 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -38992,7 +39173,9 @@ gg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39076,7 +39259,9 @@ G9tOFnwgOVnwgeRkwQeSkwUfSE4WfCA5WfCB5GTBB5KThf8DUjTsdc1eWQMAAAAASUVORK5CYII=
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 28, Children crossing
@@ -39088,7 +39273,9 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39199,7 +39386,9 @@ awAewMC3i5k3fuYkdyiCZTugFARhO6AUBEIKKAWBkAJKQSCkgFIQCCmgFARCCigFgZACSkEgpIBS
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39289,7 +39478,9 @@ gg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 13, Yield
@@ -39301,7 +39492,9 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39416,7 +39609,9 @@ VGAHkkUq+H+DrU6LUDm1vQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39510,7 +39705,9 @@ AABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 14, Stop
@@ -39522,7 +39719,9 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39626,7 +39825,9 @@ wL8AeBcxle8r2JOT3gLwLOaxXSGET3/iJGcUbtl2tAIXth2twAnJ0QqckBytwAnJ0QqckBytwAnJ
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39714,7 +39915,9 @@ GEhBEWIgBUWIgRQUIQZSUIT/AyCBVRfeBfCsAAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: 18, General caution
@@ -39729,8 +39932,7 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -39763,7 +39965,9 @@ Prediction: 5, Speed limit (80km/h)
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Test Accuracy = 0.000
@@ -39775,8 +39979,7 @@ Prediction: 5, Speed limit (80km/h)
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -39838,7 +40041,9 @@ Prediction: 5, Speed limit (80km/h)
 
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -39948,7 +40153,9 @@ T0geucATkkcu8ITkkQv+H14nLuXy41u5AAAAAElFTkSuQmCC
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 17, No entry
@@ -39969,7 +40176,9 @@ Prediction: 30, Beware of ice/snow,
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40080,7 +40289,9 @@ wBOSRyrwhOSRCjwheaQCT0geqcATkkcq+H9YlunVI/Y1eQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 38, Keep right
@@ -40101,7 +40312,9 @@ Prediction: 17, No entry,
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40207,7 +40420,9 @@ gg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 28, Children crossing
@@ -40228,7 +40443,9 @@ Prediction: 31, Wild animals crossing,
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40339,7 +40556,9 @@ awAewMC3i5k3fuYkdyiCZTugFARhO6AUBEIKKAWBkAJKQSCkgFIQCCmgFARCCigFgZACSkEgpIBS
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 13, Yield
@@ -40360,7 +40579,9 @@ Prediction: 17, No entry,
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40475,7 +40696,9 @@ VGAHkkUq+H+DrU6LUDm1vQAAAABJRU5ErkJggg==
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 14, Stop
@@ -40496,7 +40719,9 @@ Prediction: 17, No entry,
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 
 
@@ -40600,7 +40825,9 @@ wL8AeBcxle8r2JOT3gLwLOaxXSGET3/iJGcUbtl2tAIXth2twAnJ0QqckBytwAnJ0QqckBytwAnJ
 </div>
 
 <div class="output_area">
+
 <div class="prompt"></div>
+
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Actual: Class 18, General caution
@@ -40624,8 +40851,7 @@ Prediction: 17, No entry,
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -40634,8 +40860,7 @@ Prediction: 17, No entry,
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -40646,8 +40871,7 @@ Prediction: 17, No entry,
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
