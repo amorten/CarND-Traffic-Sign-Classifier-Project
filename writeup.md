@@ -85,7 +85,7 @@ Here is an example of a traffic sign image before and after grayscaling:
 ![color image][color]
 ![gray image][gray]
 
-I then normalized the image data to be centered around zero and lie within the range [-1.0, 1.0]. Backpropagation of weights tends to work much better with normalized input.
+I then normalized the image data to be centered around zero and lie within the range [-1.0, 1.0]. Backpropagation of weights tends to work much better with normalized input. Normalization helps keep the weights for different features roughly similar in magnitude, so that certain weights do not always dominate the weight gradient.
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
