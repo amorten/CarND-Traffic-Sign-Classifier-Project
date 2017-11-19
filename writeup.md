@@ -8,7 +8,7 @@
 
 The goals / steps of this project are the following:
 
-* Load the data set (see below for links to the project data set)
+* Load the data set 
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -47,7 +47,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code][notebook]
+You're reading it! and here is a link to my [project code][notebook] and the the [HTML version](./report.html).
 
 ### Data Set Summary & Exploration
 
@@ -158,7 +158,7 @@ Here are six German traffic signs that I found on the web (by using Google stree
 The first image might be difficult to classify because it is quite dark and the sign is relatively small. The second image could be difficult if the angle of the arrow differs too much from training data. The third image could be difficult because the pedistrian icons are small and blury. The fourth image could be difficult if the angle, position and size are not similar enough to the training data.
 The same could be said for the fifth and sixth images, which have the additional problem of being  quite dark.
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
@@ -179,7 +179,7 @@ Clearly the model does not generalize well, which suggests I may be overfitting,
 
 
 
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
+#### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 
 As discussed in the previous section, my model did not generalize well to the images found on the web. It is not very confident about its predictions, and when it is not confident, it typically thinks that "Speed limit (80km/h)" is the best choice.
