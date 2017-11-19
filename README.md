@@ -27,7 +27,7 @@ The project includes the following files:
 * [Traffic\_Sign\_Classifier.ipynb](./Traffic_Sign_Classifier.ipynb) - the IPython notebook that does everything for this project
 * [report.html](./report.html) - for convenience, the above IPython notebook converted to HTML
 
-
+The additional traffic sign images, which I obtained from Google Maps street view in Berlin and Munich, are in the [more_test_images](./more_test_images) folder.
 
 
 
