@@ -172,17 +172,19 @@ Here are the results of the prediction:
 | General caution		| Speed limit (80km/h)      							|
 
 
-The model was able to correctly guess 0 of the 6 traffic signs, which gives an accuracy of 0%. This does not compare well with the 94% accuracy on the test set.
-An earlier version of the model correcly predicted 2 of the 6 traffic signs, but it had less than 93% validation accuracy, and so was not eligible for submission. In either case, the accuracy on web images is much, much lower than on the test data.
-
-Clearly the model does not generalize well, which suggests I may be overfitting, or perhaps there is not enough variation in the training dataset. Augmenting the data set would be the next logical step.
+The model was able to correctly guess 6 of the 6 traffic signs, which gives an accuracy of 100%. This is comparable to the test dataset accuracy of 93.9%.
+The model appears to generalize well to random German road signs found on Google maps, as long as the road sign class is already part of the database.
 
 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 
-As discussed in the previous section, my model did not generalize well to the images found on the web. It is not very confident about its predictions, and when it is not confident, it typically thinks that "Speed limit (80km/h)" is the best choice.
+The model is very confident about its correct predictions for the images scraped from the web. The highest softmax value for each of the six images were 
+1.000, 1.000, 1.000, 1.000, 0.981, and 1.000.
+
+**TO DO: An earlier version of this writeup had much worse softmax values, so please ignore the tables below. Instead refer to the six values above. I plan to update the tables in the afternoon on Nov. 21, 2017.**
+
 The top five predicted traffic signs are similar for each image.
 
 For the first image, the top five soft max values were
