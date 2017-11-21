@@ -183,7 +183,7 @@ The model appears to generalize well to random German road signs found on Google
 The model is very confident about its correct predictions for the images scraped from the web. The highest softmax value for each of the six images were 
 1.000, 1.000, 1.000, 1.000, 0.981, and 1.000.
 
-**TO DO: An earlier version of this writeup had much worse softmax values, so please ignore the tables below. Instead refer to the six values above. I plan to update the tables in the afternoon on Nov. 21, 2017.**
+**TO DO: An earlier version of this writeup had much worse softmax values, so please ignore the tables below. Instead refer to the six values above. I plan to update the tables in the afternoon on Nov. 21, 2017. Refer to the penultimate cells of the [notebook] or [report.html](./report.html) for the updated (and much better) softmax values and predictions.**
 
 The top five predicted traffic signs are similar for each image.
 
